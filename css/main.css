@@ -1,19 +1,17 @@
 :root {
-  --sidebar-width: 400;
+  --sidebar-width: 200;
+  --sidebar-color: #66b2e5;
 }
-
-* {
-  font-family: 'Raleway', sans-serif;
-}
-
 
 #wrapper {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
   padding-left: calc(var(--sidebar-width) * 1px);
   transition: all 0.5s;
 }
 
 #wrapper a:link, a:hover, a:visited, a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #sidebar {
@@ -22,14 +20,19 @@
   position: fixed;
   height: 100%;
   padding: 30px;
-  background: #9CE;
+  background: #66b2e5;
+  /* background: #1a6699; */
   transition: all 0.5s;
   text-align: right;
-  vertical-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
 }
 
 #sidebar h1 {
-  color: #1a6699;
+  color: #FFF;
+  font-weight: 100;
 }
 
 #sidebar ul {
@@ -37,15 +40,51 @@
   font-size: 20px;
 }
 
-#content {
-  padding: 30px;
+#sidebar a {
+  color: #FFF;
 }
 
-#content-body p {
+#sidebar img {
+  height: 20px;
+  width: 20px;
+}
+
+/*
+#sidebar-content {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+*/
+
+#sidebar-content li {
+  padding: 10px 50px 10px 10px;
+  margin-left: -100px;
+  margin-right: -50px;
+}
+
+#sidebar-content li.selected {
+  background-color: #FFF;
+}
+
+#sidebar-content li.selected a {
+  color: var(--sidebar-color);
+}
+
+#main {
+  padding: 30px;
+  font-weight: 100;
+}
+
+#main h1 {
+  font-weight: 100;
+}
+
+#main-content p {
   font-size: 20px;
 }
 
-#content-body ul {
+#main-content ul {
   font-size: 20px;
   padding-left: 40px;
   list-style: none;
@@ -56,7 +95,7 @@
       padding-left: 50px;
     }
 
-<!-- lol comment everything below this out-->
+/* lol comment everything below this out */
     #wrapper.active {
       position: relative;
       left: calc(var(--sidebar-width) * 1px);
