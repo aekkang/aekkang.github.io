@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300|Muli:300,400|Prompt:100,200,300|Raleway:100,200,300|Open Sans:300,400|Robot:100,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
   </head>
 
   <body>
@@ -24,31 +24,40 @@
       <!-- TODO: make tab style navigation bar (tabs & pills) -->
       <!-- TODO: clouds float across the nav bar LOL -->
       <!-- TODO: nice sidebar border -->
+      <!-- TODO: goddamn vertical align -->
+      <!-- TODO: sidebar collapses to initials and logos only -->
       <div id="sidebar">
-        <div id="sidebar-content">
-          <h1>Andrew Kang</h1>
-          <ul>
-            <li><a href="index.html">Home <img src="img/white/home.png"></a></li>
-            <li><a href="about.html">About Me <img src="img/white/about.png"></a></li>
-            <li><a target="_blank" href="http://www.github.com/aekkang">GitHub <img src="img/white/github.png"></a></li>
-            <li><a target="_blank" href="http://www.linkedin.com/in/aekkang">LinkedIn <img src="img/white/linkedin.png"></a></li>
-            <li><a href="mailto:akang@caltech.edu" target="_top">Contact <img src="img/white/email.png" width="20px" height="20px"></a></li>
-          </ul>
-        </div>
+        <h1>Andrew<br>Kang</h1>
+        <ul>
+          <li><a href="index.html">Home <span class="glyphicon glyphicon-home"></span></a></li>
+          <li><a href="about.html">About Me <span class="glyphicon glyphicon-user"></span></a></li>
+          <li><a target="_blank" href="http://www.github.com/aekkang">GitHub <img src="img/white/github.png"></a></li>
+          <li><a target="_blank" href="http://www.linkedin.com/in/aekkang">LinkedIn <img src="img/white/linkedin.png"></a></li>
+          <li><a href="mailto:akang@caltech.edu" target="_top">Contact <span class="glyphicon glyphicon-envelope"></span></a></li>
+        </ul>
       </div>
 
       <!-- Content -->
       <div id="main">
-        <div id="main-content">
-          <h1>Computer Science major at Caltech<br>Class of 2018</h1>
-          <ul>
-            <li>Programmer</li>
-            <li>Pianist</li>
-            <li>Mathematician</li>
-            <li>Canadian</li>
-          </ul>
-          <p>Here. Have my resume. <a href="http://goo.gl/LByMkc">HAVE IT</a></p>
-        </div>
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-xs-12">
+              <div id="main-content">
+                <h3>Computer Science major at Caltech</h3>
+                <h3>Class of 2018</h3>
+                <!-- TODO: maybe have a window switching between these words? -->
+                <ul>
+                  <li>Programmer</li>
+                  <li>Pianist</li>
+                  <li>Mathematician</li>
+                  <li>Canadian</li>
+                </ul>
+                <p>Am I supposed to describe myself? I'm particularly bad at that, but here goes:</p>
+                <p>I'm a junior majoring in Computer Science at the California Institute of Technology in Pasadena, California. I'm from the beautiful city of Victoria, BC, and I'm proudly Canadian! I have a passion for math, computer science, and machine learning. I also like to fiddle aronud on the piano and watch beautiful sceneries when I get the chance.</p>
+                <p>My resume can be found <a href="http://goo.gl/LByMkc">here</a>.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

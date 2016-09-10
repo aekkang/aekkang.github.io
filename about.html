@@ -13,63 +13,73 @@
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
   </head>
 
   <body>
-    <header class="container">
-      <nav class="navbar navbar-default">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Andrew Kang</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="about.html">About Me</a></li>
-          <li><a target="_blank" href="http://www.github.com/aekkang">GitHub</a></li>
-          <li><a target="_blank" href="http://www.linkedin.com/in/aekkang">LinkedIn</a></li>
-        </ul>
-      </nav>
-      <!--<div class="row">
-        <div class="col-xs-8">
-        </div>
-        <div class="col-xs-4 text-right">
-          <a>hi</a>
-          <a>hello there</a>
-        </div>
-      </div>-->
-    </header>
 
-    <section class="jumbotron">
-      <div class="container">
-        <div class="about">
-          <p>Wow! This works. Um I'm me.</p>
-          <p>Ok. Things I like: </p>
-          <ul>
-            <li>Piano</li>
-            <li>Music</li>
-            <ul>
-              <li>Classical music</li>
-              <li>EDM</li>
-              <li>Future Funk</li>
-            </ul>
-            <li>Machine learning</li>
-            <li>Hacktech</li>
-            <li>Wall-E</li>
-            <li>Sceneries</li>
-            <li>Lists</li>
-            <li>Coming up with things I like</li>
-          </ul>
-          <p>Things I don't like: </p>
-          <ul>
-            <li>Disorganized things</li>
-            <li>Cockroaches</li>
-            <li>Coming up with things I don't like</li>
-          </ul>
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <!-- TODO: make tab style navigation bar (tabs & pills) -->
+      <!-- TODO: clouds float across the nav bar LOL -->
+      <!-- TODO: nice sidebar border -->
+      <!-- TODO: goddamn vertical align -->
+      <!-- TODO: sidebar collapses to initials and logos only -->
+      <div id="sidebar">
+        <h1>Andrew<br>Kang</h1>
+        <ul>
+          <li><a href="index.html">Home <span class="glyphicon glyphicon-home"></span></a></li>
+          <li><a href="about.html">About Me <span class="glyphicon glyphicon-user"></span></a></li>
+          <li><a target="_blank" href="http://www.github.com/aekkang">GitHub <img src="img/white/github.png"></a></li>
+          <li><a target="_blank" href="http://www.linkedin.com/in/aekkang">LinkedIn <img src="img/white/linkedin.png"></a></li>
+          <li><a href="mailto:akang@caltech.edu" target="_top">Contact <span class="glyphicon glyphicon-envelope"></span></a></li>
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div id="main">
+        <div class="jumbotron">
+          <div class="row">
+            <div id="main-content">
+              <div class="col-xs-12">
+                <div class="about">
+                  <p>Wow! This works. Um I'm me.</p>
+                  <p>Ok. Things I like: </p>
+                  <ul>
+                    <li>Piano</li>
+                    <li>Music</li>
+                    <ul>
+                      <li>Classical music</li>
+                      <li>EDM</li>
+                      <li>Future Funk</li>
+                    </ul>
+                    <li>Machine learning</li>
+                    <li>Hacktech</li>
+                    <li>Wall-E</li>
+                    <li>Sceneries</li>
+                    <li>Sidebars</li>
+                    <li>Lists</li>
+                    <li>Coming up with things I like</li>
+                  </ul>
+                  <p>Things I don't like: </p>
+                  <ul>
+                    <li>Disorganized things</li>
+                    <li>Cockroaches</li>
+                    <li>Coming up with things I don't like</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
+
