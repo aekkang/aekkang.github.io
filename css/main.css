@@ -1,6 +1,6 @@
 :root {
   --sidebar-width: 20;
-  --sidebar-color: #1A6699;
+  --sidebar-color: #2083c5;
   --main-color: #E8F5FC;
 }
 
@@ -49,7 +49,7 @@
   color: var(--main-color);
   font-weight: 100;
   font-size: 3vw;
-  padding-top: 10vh;
+  padding-top: 15vh;
 }
 
 #sidebar a {
@@ -71,42 +71,55 @@
 }
 
 #sidebar li.selected {
-  background-color: var(--main-color);
+  background-color: rgba(60, 60, 60, 1);
+  font-weight: 300;
 }
 
 #sidebar li.selected a {
   color: var(--sidebar-color);
+  font-weight: 300;
 }
 
 /* Main */
 #main {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   position: fixed;
   width: calc(100% - calc(var(--sidebar-width) * 1vw));
   height: 100%;
   padding: 0 15% 0 3%;
   overflow-y: auto;
 
-  background: rgba(100, 100, 100, 0.4);
+  background: rgba(120, 120, 120, 0.6);
   overflow: hidden;
   height: 100%;
   z-index: 2;
+  letter-spacing: 0.8px;
 } 
 
-#main-content {
-  margin-top: -3%;
+#main-center {
+  margin-top: 10vh;
 }
 
-#main-content h3 {
+#main-content h1 {
   font-style: italic;
-  line-height: 40px;
-  padding: 10px 0;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000;
+}
+
+#main-content h2 {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 50px;
+  color: #000;
 }
 
 #main-content p {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 100;
   color: #FFF;
 
   padding: 10px 0;
@@ -114,14 +127,19 @@
 }
 
 #main-content ul {
-  font-size: 20px;
-  padding-left: 0;
+  padding-left: 50px;
   list-style: none;
-  color: #FFF
+}
+
+#main-content li:before {
+  content: ">";
+  padding-right: 20px;
 }
 
 #main-content li {
-  padding: 5px 0;
+  font-size: 20px;
+  color: #FFF
+
 }
 
 #main-content a:link {

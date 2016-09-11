@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var location = window.location;
     var found = false;
-    $("#sidebar-content a").each(function() {
+    $("#sidebar a").each(function() {
         var href = $(this).attr("href");
         if(href == location) {
             $(this).parent().addClass("selected");
@@ -9,10 +9,11 @@ $(document).ready(function () {
         }
     });
     if(!found){
-        $("#sidebar-content li:first").addClass("selected");
+        $("#sidebar li:first").addClass("selected");
     }
 });
 
+/* TODO: loading icon*/
 $(function() {
     $('#wrapper').hide();
 });
