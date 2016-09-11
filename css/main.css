@@ -90,7 +90,7 @@
   overflow-y: auto;
 
   background: rgba(20, 20, 20, 0.4);
-  overflow: hidden;
+  overflow: auto;
   height: 100%;
   z-index: 2;
   letter-spacing: 0.8px;
@@ -160,22 +160,10 @@
 /* Responsiveness */
 @media (max-width:767px) {
   #wrapper {
-    padding-left: 50px;
+    padding-left: 0;
   }
 
-/* lol comment everything below this out */
-  #wrapper.active {
-    position: relative;
-    left: calc(var(--sidebar-width) * 1vw);
-  }
-
-  #wrapper.active #sidebar {
-    left: calc(var(--sidebar-width) * 1vw);
-    width: calc(var(--sidebar-width) * 1vw);
-    transition: all 0.5s;
-  }
-
-  #sidebar {
-    left: 0;
+  #main {
+    width: 100%;
   }
 }
