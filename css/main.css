@@ -135,12 +135,14 @@
 }
 
 #main-content li:before {
-  content: ">";
+  content: "\e080";
+  font-family: 'Glyphicons Halflings';
   padding-right: 20px;
 }
 
 #main-content li {
   font-size: 20px;
+  line-height: 35px;
   color: #FFF
 
 }
