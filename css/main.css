@@ -35,7 +35,7 @@
   padding: 30px;
   background: var(--sidebar-color);
   transition: all 0.5s;
-  opacity: 0.75;
+  opacity: 0.8;
 
   text-align: right;
   text-transform: uppercase;
@@ -58,8 +58,8 @@
 }
 
 #sidebar img {
-  height: 20px;
-  width: 20px;
+  height: 1.5vw;
+  padding: 0 0.1vw;
 }
 
 #sidebar li {
@@ -71,8 +71,7 @@
 }
 
 #sidebar li.selected {
-  background-color: rgba(60, 60, 60, 1);
-  font-weight: 300;
+  background-color: rgba(80, 80, 80, 1);
 }
 
 #sidebar li.selected a {
@@ -90,15 +89,19 @@
   padding: 0 15% 0 3%;
   overflow-y: auto;
 
-  background: rgba(120, 120, 120, 0.6);
+  background: rgba(20, 20, 20, 0.4);
   overflow: hidden;
   height: 100%;
   z-index: 2;
   letter-spacing: 0.8px;
-} 
+}
 
 #main-center {
-  margin-top: 10vh;
+  margin-top: 6vh;
+}
+
+#main-title {
+  margin-bottom: 4vh;
 }
 
 #main-content h1 {
@@ -106,7 +109,7 @@
   font-weight: 100;
   font-size: 40px;
   line-height: 50px;
-  color: #000;
+  color: #FFF;
 }
 
 #main-content h2 {
@@ -114,7 +117,7 @@
   font-weight: 100;
   font-size: 30px;
   line-height: 50px;
-  color: #000;
+  color: #FFF;
 }
 
 #main-content p {
