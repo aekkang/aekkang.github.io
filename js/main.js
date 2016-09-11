@@ -34,11 +34,12 @@ setInterval(function () {
 i=0
 var words = ["Programmer", "Pianist", "Mathematician", "Canadian"];
 
+// TODO: use CSS3 transitions and Transit plugin
 function fade() {
-    $('#main-fade').fadeIn(500).delay(2000).html(words[i % words.length]).fadeOut(500);
+    $('#main-fade').fadeIn(1000).delay(2000).html(words[i % words.length]).fadeOut(1000);
     i++;  //counter, set to 0 initially
 
-    setTimeout(fade, 3000);
+    setTimeout(fade, 4000);
 }
 
 fade();
