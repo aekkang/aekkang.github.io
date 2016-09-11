@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    var location = window.location;
+    /* TODO: VERY JANK SOLUTION NEED TO FIX AFTER I ACTUALLY LEARN JAVASCRIPT */
+    var location = window.location.pathname.slice(-10);
     var found = false;
     $("#sidebar a").each(function() {
         var href = $(this).attr("href");
@@ -11,6 +12,7 @@ $(document).ready(function () {
     if(!found){
         $("#sidebar li:first").addClass("selected");
     }
+    console.log(location);
 });
 
 /* TODO: loading icon*/
