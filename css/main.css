@@ -155,6 +155,10 @@
   color: #888;
 }
 
+.main-fade {
+  display: none;
+}
+
 .jumbotron {
   background: transparent !important;
 }
