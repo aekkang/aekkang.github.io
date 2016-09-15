@@ -79,3 +79,17 @@ function two() {
 
 one()
 */
+
+/* Adapted from http://stackoverflow.com/questions/23906956/show-loading-icon-until-the-page-is-load */
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('wrapper').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('loading').style.visibility="hidden";
+         document.getElementById('wrapper').style.visibility="visible";
+      },1000);
+  }
+}
