@@ -81,6 +81,7 @@ one()
 */
 
 /* Adapted from http://stackoverflow.com/questions/23906956/show-loading-icon-until-the-page-is-load */
+/*
 document.onreadystatechange = function () {
   var state = document.readyState
   if (state == 'interactive') {
@@ -93,3 +94,4 @@ document.onreadystatechange = function () {
       },1000);
   }
 }
+*/

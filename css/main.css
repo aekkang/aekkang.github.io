@@ -4,27 +4,17 @@
   --main-color: #E8F5FC;
 }
 
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-.fade-in {
-    opacity:0;  /* make things invisible upon start */
-    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-
-    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-
-    animation-duration:1s;
-    animation-delay: 1.5s
-}
-
+/* TODO: Make loading icon appear only when site is loaded for the first time */
 /* Loading */
+/*
 #loading {
   width: 100%;
   height: 100%;
-  position: fixed;
-  /* TODO: change icon at http://loading.io/ */
+  position: fixed;  
   background: url("../img/loading.svg") no-repeat center center;
   background-color: rgba(20, 20, 20, 0.8);
 }
+*/
 
 /* Wrapper */
 #wrapper {
@@ -120,8 +110,8 @@
   letter-spacing: 0.8px;
 }
 
-#main-center {
-  margin-top: 6vh;
+#main-content {
+  margin-top: 15vh;
 }
 
 #main-title {
@@ -181,10 +171,6 @@
 
 .main-fade {
   display: none;
-}
-
-.jumbotron {
-  background: transparent !important;
 }
 
 @media (max-width:767px) {
