@@ -39,6 +39,7 @@
 }
 
 /* Sidebar */
+/* TODO: use this as reference: http://www.anishathalye.com/ */
 #sidebar {
   margin-left: calc(var(--sidebar-width) * -1vw);
   width: calc(var(--sidebar-width) * 1vw);
