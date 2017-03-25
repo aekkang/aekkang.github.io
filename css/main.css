@@ -1,8 +1,129 @@
+/*
+  References:
+
+  https://timmyomahony.com/
+  http://kalynnakano.com/#illustration
+*/
+
+#nav-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+
+  line-height: 80px;
+  z-index: 1000;
+  /*background-color: #d2e1f9;*/
+  background-color: #cfe2f3;
+  /*border-bottom: 3px solid #bfd2e3;*/
+}
+
+#nav-top ul {
+  list-style: none;
+  display: inline;
+}
+
+#nav-top li {
+  font-weight: 300;
+  display: inline;
+  padding: 0 3em;
+}
+
+#nav-top a:hover {
+  text-decoration: none;
+  color: #1155cc;
+}
+/*
+#nav-top a:visited {
+  text-decoration: none;
+  color: #1155cc;
+}
+#nav-top a:active {
+  text-decoration: none;
+  color: #1155cc;
+}
+#nav-top a:link {
+  text-decoration: none;
+  color: #1155cc;
+}
+*/
+
+#home {
+  /*position: absolute; top: 0; right: 0; bottom: 0; left: 0;*/
+  /*height: 100%;*/
+}
+
+#header {
+  padding-top: 120px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+#header-img {
+  width: 250px;
+}
+
+#intro {
+  margin-top: 40px;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  /*letter-spacing: 0.4px;*/
+}
+
+#intro p {
+  padding-bottom: 20px;
+}
+
+#resume {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 100px;
+  /*letter-spacing: 0.4px;*/
+  /*
+  position: fixed;
+  width: calc(100% - calc(var(--sidebar-width) * 1vw));
+  height: 100%;
+  padding: 0 15% 0 3%;
+  overflow-y: auto;
+
+  overflow: auto;
+  height: 100%;
+  z-index: 2;
+  */
+}
+
+.resume-header h2 {
+  font-size: 40px;
+}
+
+.resume-item {
+  padding-bottom: 30px;
+}
+
+.resume-item h3 {
+  /*color: #7ab6f8;*/
+  color: #4a86e8;
+}
+
+.resume-img {
+  width: 130px;
+}
+
+/*
 :root {
   --sidebar-width: 20;
-  --sidebar-color: #2083c5;
-  --main-color: #E8F5FC;
+  --sidebar-color: #4a86e8;
+  --main-color: #FFF;
 }
+*/
 
 /* TODO: Make loading icon appear only when site is loaded for the first time */
 /* Loading */
@@ -17,11 +138,10 @@
 */
 
 /* Wrapper */
-#wrapper {
+/*#wrapper {
   padding-left: calc(var(--sidebar-width) * 1vw);
   transition: all 0.5s;
 
-  background-image: url("../img/bg/yosemite.jpg");
   background-position: center;
   background-size: cover;
 
@@ -32,15 +152,15 @@
   bottom: 0;
   right: 0;
   z-index: -1;   
-}
+}*/
 
-#wrapper a:link, a:hover, a:visited, a:active {
+/*#wrapper a:link, a:hover, a:visited, a:active {
   text-decoration: none;
-}
+}*/
 
 /* Sidebar */
 /* TODO: use this as reference: http://www.anishathalye.com/ */
-#sidebar {
+/*#sidebar {
   margin-left: calc(var(--sidebar-width) * -1vw);
   width: calc(var(--sidebar-width) * 1vw);
   position: fixed;
@@ -48,7 +168,6 @@
   padding: 30px;
   background: var(--sidebar-color);
   transition: all 0.5s;
-  opacity: 0.8;
 
   text-align: right;
   text-transform: uppercase;
@@ -85,17 +204,16 @@
 
 #sidebar li.selected,
 #sidebar li:hover {
-  background-color: rgba(20, 20, 20, 0.8);
 }
 
 #sidebar li.selected a,
 #sidebar li:hover a {
   color: var(--sidebar-color);
   font-weight: 300;
-}
+}*/
 
 /* Main */
-#main {
+/*#main {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   position: fixed;
@@ -104,7 +222,6 @@
   padding: 0 15% 0 3%;
   overflow-y: auto;
 
-  background: rgba(20, 20, 20, 0.8);
   overflow: auto;
   height: 100%;
   z-index: 2;
@@ -182,4 +299,4 @@
   #main {
     width: 100%;
   }
-}
+}*/

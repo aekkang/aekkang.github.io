@@ -19,51 +19,214 @@
   </head>
 
   <body>
-    <!-- TODO: no Bootstrap? I don't even use it LOL -->
-    <!-- TODO: loading icon? -->
-    <div id="loading"></div>
 
-    <div id="wrapper">
-      <!-- Sidebar -->
-      <!-- TODO: goddamn vertical align Q.Q -->
-      <!-- TODO: sidebar collapses to initials and logos only -->
-      <div id="sidebar">
-        <h1>Andrew<br>Kang</h1>
-        <ul>
-          <!-- TODO: add resume to sidebar -->
-          <!-- TODO: vertically center glyphicons -->
-          <li><a href="index.html">Home <span class="glyphicon glyphicon-home"></span></a></li>
-          <li><a href="about.html">About Me <span class="glyphicon glyphicon-user"></span></a></li>
-          <li><a target="_blank" href="http://www.github.com/aekkang">GitHub <img src="img/icons/github.png"></a></li>
-          <!-- TODO: change logos for GitHub and LinkedIn -->
-          <li><a target="_blank" href="http://www.linkedin.com/in/aekkang">LinkedIn <img src="img/icons/linkedin.png"></a></li>
-          <li><a href="mailto:akang@caltech.edu" target="_top">Contact <span class="glyphicon glyphicon-envelope"></span></a></li>
-        </ul>
-      </div>
+    <!-- TODO: not multi-page -->
 
-      <!-- Content -->
-      <div id="main">
-        <div class="row">
-          <div class="col-xs-12">
-            <div id="main-content">
-              <div id="main-title">
-                <p>(Site under construction)</p>
-                <h1>Computer Science major at Caltech<br>Class of 2018</h1>
-                <!-- TODO: make fade in effect fly -->
-                <!-- TODO: if tab is inactive the timing is messed up -->
-                <h2 class="main-fade">Programmer</h2>
-                <h2 class="main-fade">Pianist</h2>
-                <h2 class="main-fade">Mathematician</h2>
-                <h2 class="main-fade">Canadian</h2>
-              </div>
-              <p>Am I supposed to describe myself? I'm particularly bad at that, but here goes:</p>
-              <p>I'm a junior majoring in Computer Science at the California Institute of Technology in Pasadena, California. I'm from the beautiful city of Victoria, BC, and I'm proudly Canadian! I have a passion for math, computer science, and machine learning. I also like to fiddle around on the piano and watch beautiful sceneries when I get the chance.</p>
-              <p>My resume can be found <a target="_blank" href="http://goo.gl/LByMkc">here</a>.</p>
-            </div>
+    <!-- Top navigation bar -->
+    <div id="nav-top">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#resume">Resume</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+
+
+
+    <!-- Content -->
+    <div class="container">
+ 
+      <!-- Home -->
+      <div id="home">
+        <!-- Header -->
+        <div class="row" id="header">
+          <div class="col-sm-8 col-sm-offset-2">
+            <!-- TODO: make this look nicer -->
+            <img id="header-img" src="img/andoru.png">
+            <h1>Andrew Kang</h1>
+          </div>
+        </div>
+
+
+
+        <!-- Introduction -->
+        <div class="row" id="intro">
+          <div class="col-sm-8 col-sm-offset-2">
+            <p>Hey there! I'm currently a junior at Caltech, majoring in Computer Science. I have a passion for math, machine learning, piano, backpacking, and the likes.</p>
+
+            <!-- TODO: Change link color? -->
+            <p>Here's my <a target="_blank" href="https://goo.gl/HlTmQ8">resume</a>! Take it. Here's my <a target="_blank" href="http://www.github.com/aekkang">GitHub</a> for good measure as well. Want more links? Here's my <a target="_blank" href="http://www.linkedin.com/in/aekkang">LinkedIn</a>.</p>
           </div>
         </div>
       </div>
+
+
+
+      <!-- Resume -->
+      <div id="resume">
+
+
+
+        <!-- Education -->
+        <div id="education">
+
+          <!-- Education header -->
+          <div class="row resume-header">
+            <div class="col-sm-8 col-sm-offset-2">
+              <h2>Education</h2>
+            </div>
+          </div>
+
+          <!-- Education: item 1 -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <p>09/14 - 06/18</p>
+            </div>
+
+            <div class="col-sm-6">
+              <h3>BS in Computer Science</h3>
+              <p>GPA: 3.8</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Education -->
+
+
+
+        <!-- Work -->
+        <!-- TODO: Add images -->
+        <div id="work">
+
+          <!-- Work header -->
+          <div class="row resume-header">
+            <div class="col-sm-8 col-sm-offset-2">
+              <h2>Work</h2>
+            </div>
+          </div>
+
+          <!-- Work item 1 -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <p>12/16 - 03/17</p>
+            </div>
+
+            <div class="col-sm-6">
+              <h3>CS 155 (Machine Learning &amp; Data Science) Teaching Assistant</h3>
+              <ul>
+                <li>Overall rating of 5.0/5.0 in a graduate level class of 140 students</li>
+                <li>Taught state-of-the-art machine learning through problem sets and projects</li>
+                <li>Created, modified, and graded problem sets, and held frequent office hours</li>
+                <li>Implemented skeleton code, solution code, and test suites from scratch</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Work item 2 -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>OpenX</h3>
+              <p>06/16 - 08/16</p>
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Quality Assurance Intern</h3>
+              <ul>
+                <li>Implemented and debugged a pipeline on GoCD, a continuous development server, for ad broker software and simulation code</li>
+                <li>Debugged, refactored, and updated Java and Erlang code using Eclipse</li>
+                <li>Implemented cronjobs to archive ad data using Docker and Vagrant</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Work item 3 -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <p>06/15 - 05/16</p>
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Summer Undergraduate Research Fellow (Machine Learning)</h3>
+              <ul>
+                <li>Presented a meta-algorithm that reduces smooth imitation online learning to a regression problem, inspired by autonomous camera planning</li>
+                <li>Implemented algorithm with Python and scikit-learn on sports game data</li>
+                <li>Second author to paper published in ICML (see <a target="_blank" href="https://arxiv.org/abs/1606.00968">paper</a>)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- End Work section -->
+
+
+
+        <!-- Projects -->
+        <div id="projects">
+
+          <!-- Projects header -->
+          <div class="row resume-header">
+            <div class="col-sm-8 col-sm-offset-2">
+              <h2>Projects</h2>
+            </div>
+          </div>
+
+          <!-- Projects: item 1 -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <!-- <p>ME/CS 132a (Advanced Robotics)</p> -->
+              <p>01/17 - 03/17</p>
+
+              <img class="resume-img" src="img/dstar.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>D* Algorithm</h3>
+              <ul>
+                <li>Implemented the D* Algorithm in Python to simulate a robot navigating in an environment while detecting obstacles with its sensors</li>
+                <li>Used Tkinter to handle graphics with real-time updates, and file parsing to handle user input</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Projects: item 2 -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <!-- <p>CS 101 - Projects in Machine Learning</p> -->
+              <p>09/16 - 12/16</p>
+              <img class="resume-img" src="img/funnehbot.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Computational Humor</h3>
+              <ul>
+                <li>Programmed a bot to make humorous comments on reddit posts</li>
+                <li>Used word2vec, image recognition, PCA and NLTK to generate humour</li>
+                <li>Used sklearn to generate a model that determines relevancy of a comment</li>
+              </ul>
+            </div>
+          </div>
+
+        
+        </div>
+        <!-- End Projects -->
+
+
+
+      </div>
+
+
+
+
     </div>
+       
+  </body>
+  </html> 
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
