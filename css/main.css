@@ -5,6 +5,16 @@
   http://kalynnakano.com/#illustration
 */
 
+:root {
+  /*--sidebar-width: 20;*/
+  /*--sidebar-color: #4a86e8;*/
+  /*--main-color: #FFF;*/
+  --blue-light: #cfe2f3;
+  --blue-dark: #4a86e8;
+  --blue-black: #0c2a5a;
+}
+
+/*TODO: mobile no bar?*/
 #nav-top {
   position: fixed;
   top: 0;
@@ -20,7 +30,7 @@
   line-height: 80px;
   z-index: 1000;
   /*background-color: #d2e1f9;*/
-  background-color: #cfe2f3;
+  background-color: var(--blue-light);
   /*border-bottom: 3px solid #bfd2e3;*/
 }
 
@@ -54,6 +64,9 @@
 }
 */
 
+
+
+/*** HOME ***/
 #home {
   /*position: absolute; top: 0; right: 0; bottom: 0; left: 0;*/
   /*height: 100%;*/
@@ -70,10 +83,13 @@
 }
 
 #intro {
+  /*TODO: make this solid background*/
   margin-top: 40px;
+  margin-bottom: 60px;
   font-family: "Lato", sans-serif;
   font-size: 25px;
   font-weight: 300;
+  /*border-bottom: 5px solid;*/
   /*letter-spacing: 0.4px;*/
 }
 
@@ -81,6 +97,13 @@
   padding-bottom: 20px;
 }
 
+#intro a {
+  color: var(--blue-dark);
+}
+
+
+
+/*** RESUME ***/
 #resume {
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -102,6 +125,7 @@
 
 .resume-header h2 {
   font-size: 40px;
+  border-bottom: 1px solid;
 }
 
 .resume-item {
@@ -114,16 +138,9 @@
 }
 
 .resume-img {
+  padding-top: 10px;
   width: 130px;
 }
-
-/*
-:root {
-  --sidebar-width: 20;
-  --sidebar-color: #4a86e8;
-  --main-color: #FFF;
-}
-*/
 
 /* TODO: Make loading icon appear only when site is loaded for the first time */
 /* Loading */
