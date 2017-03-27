@@ -11,6 +11,7 @@
 
     <!-- TODO: favicon -->
     <title>Andrew Kang</title>
+    <link rel="shortcut icon" type="image/ico" href="images/akfavicon.ico">
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,64 +20,510 @@
   </head>
 
   <body>
-<!-- 
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
 
-    <span id="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+    <!-- TODO: not multi-page -->
 
-<!--     <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">WebSiteName</a>
-        </div>
-
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Page 1</a></li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
-        </ul>
-      </div>
-    </nav> -->
-
-    <div class="header-nav">
-      <!-- <h1>Andrew Kang</h1> -->
+    <!-- Top navigation bar -->
+    <div id="nav-top">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>About</li>
-        <li><a href="resume.html">Resume</a></li>
-        <li>Contact</li>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#resume">Resume</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="mailto:eunkyukang@gmail.com">Email</a></li>
       </ul>
     </div>
 
+
+
+    <!-- Content -->
     <div class="container">
-      <div id="header">
+ 
+      <!-- Home -->
+      <div id="home">
+        <!-- Header -->
+        <div class="row" id="header">
+          <div class="col-sm-8 col-sm-offset-2">
+            <!-- TODO: make this look nicer -->
+            <img id="header-img" src="images/andoru.png">
+            <h1>Andrew Kang</h1>
+          </div>
+        </div>
+
+
+
+        <!-- Introduction -->
+        <div class="row" id="intro">
+          <div class="col-sm-8 col-sm-offset-2">
+            <p>Hey there! I'm currently a junior at Caltech, majoring in Computer Science. I have a passion for math, machine learning, piano, backpacking, and the likes.</p>
+
+            <!-- TODO: Change link color? -->
+            <p>Here's my <a target="_blank" href="https://goo.gl/HlTmQ8">resume</a>! Take it. Here's my <a target="_blank" href="http://www.github.com/aekkang">GitHub</a> for good measure as well. Want more links? Here's my <a target="_blank" href="http://www.linkedin.com/in/aekkang">LinkedIn</a>.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="row" id="main">
-        <div class="col-sm-2 col-sm-offset-2">
-          <h3>Education</h3>
+
+
+      <!-- Resume -->
+      <div id="resume">
+
+
+        <!-- Education -->
+        <div class="resume-section" id="education">
+
+          <!-- Education header -->
+          <div class="row resume-header">
+            <div class="col-sm-4 col-sm-offset-2">
+              <h2>Education</h2>
+            </div>
+          </div>
+
+          <!-- Education: Caltech -->
+          <div class="row resume-item">
+            <div class="col-sm-1 col-sm-offset-1">
+              <img class="resume-img" src="images/caltech.png">
+            </div>
+            <div class="col-sm-2">
+              <h3>Caltech</h3>
+              <p>09/14 - 06/18</p>
+            </div>
+
+            <div class="col-sm-6">
+              <h3>BS in Computer Science</h3>
+              <p>GPA: 3.8</p>
+            </div>
+          </div>
         </div>
+        <!-- End Education -->
 
-        <div class="col-sm-6">
-          <h3>BS in Computer Science</h3>
-          <p>California Institute of Technology <span>&bull;</span> Jun 18<br>
-          GPA: 3.8</p>
 
+
+        <!-- Work -->
+        <div class="resume-section" id="work">
+
+          <!-- Work header -->
+          <div class="row resume-header">
+            <div class="col-sm-4 col-sm-offset-2">
+              <h2>Work</h2>
+            </div>
+          </div>
+
+          <!-- Work: Facebook -->
+          <div class="row resume-item">
+            <div class="col-sm-1 col-sm-offset-1">
+              <img class="resume-img" src="images/facebook.png">
+            </div>
+            <div class="col-sm-2">
+              <h3>Facebook</h3>
+              <p>06/17 - 09/17</p>
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Software Engineering Intern</h3>
+              <ul>
+                <li>TBA!</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Work: CS 155 -->
+          <div class="row resume-item">
+            <div class="col-sm-1 col-sm-offset-1">
+              <img class="resume-img" src="images/caltech.png">
+            </div>
+            <div class="col-sm-6">
+              <h3>CS 155 (Machine Learning &amp; Data Science) Teaching Assistant</h3>
+              <h4>California Institute of Technology</h4>
+            </div>
+            <div class="col-sm-2">
+              <h3>12/16 - 03/17</h3>
+              <h4>Pasadena, CA</h4>
+            </div>
+
+          <div class="row resume-item">
+            <div class="col-sm-8 col-sm-offset-2">
+              <ul>
+                <li>Overall rating of 5.0/5.0 in a graduate level class of 140 students</li>
+                <li>Taught state-of-the-art machine learning through problem sets and projects</li>
+                <li>Created, modified, and graded problem sets, and held frequent office hours</li>
+                <li>Implemented skeleton code, solution code, and test suites from scratch</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Work: CS 1 -->
+          <div class="row resume-item">
+            <div class="col-sm-1 col-sm-offset-1">
+              <img class="resume-img" src="images/caltech.png">
+            </div>
+            <div class="col-sm-6">
+              <h3>CS 1 (Python) Teaching Assistant</h3>
+            </div>
+            <div class="col-sm-2">
+              <h3>Caltech</h3>
+              <p>09/15 - 12/16</p>
+            </div>
+
+          </div>
+          <div class="row resume-item">
+            <div class="col-sm-8 col-sm-offset-2">
+              <ul>
+                <li>Introduced Python, Unix, OOP, graphics, and programming style</li>
+                <li>Held weekly office hours and graded homework and exams</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Work: CS 11 -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <p>01/16 - 06/16</p>
+              <img class="resume-img" src="images/caltech.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>CS 11 (C) Teaching Assistant</h3>
+              <ul>
+                <li>Taught fundamentals of C, GDB, Makefiles, and memory allocation</li>
+                <li>Held weekly office hours and graded homework with feedback</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Work: OpenX -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>OpenX</h3>
+              <p>06/16 - 08/16</p>
+              <img class="resume-img" src="images/openx.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Quality Assurance Intern</h3>
+              <ul>
+                <li>Implemented and debugged a pipeline on GoCD, a continuous development server, for ad broker software and simulation code</li>
+                <li>Debugged, refactored, and updated Java and Erlang code using Eclipse</li>
+                <li>Implemented cronjobs to archive ad data using Docker and Vagrant</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Work: SURF -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <p>06/15 - 05/16</p>
+              <img class="resume-img" src="images/caltech.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Summer Undergraduate Research Fellow (Machine Learning)</h3>
+              <ul>
+                <li>Presented a meta-algorithm that reduces smooth imitation online learning to a regression problem, inspired by autonomous camera planning</li>
+                <li>Implemented algorithm with Python and scikit-learn on sports game data</li>
+                <li>Second author to paper published in ICML (see <a target="_blank" href="https://arxiv.org/abs/1606.00968">paper</a>)</li>
+              </ul>
+            </div>
+          </div>
 
         </div>
+        <!-- End Work section -->
+
+
+
+        <!-- Projects -->
+        <div class="resume-section" id="projects">
+
+          <!-- Projects header -->
+          <div class="row resume-header">
+            <div class="col-sm-4 col-sm-offset-2">
+              <h2>Projects</h2>
+            </div>
+          </div>
+
+          <!-- Projects: D* -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <!-- <p>ME/CS 132a (Advanced Robotics)</p> -->
+              <p>01/17 - 03/17</p>
+              <img class="resume-img" src="images/dstar.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>D* Algorithm</h3>
+              <ul>
+                <li>Implemented the D* Algorithm in Python to simulate a robot navigating in an environment while detecting obstacles with its sensors</li>
+                <li>Used Tkinter to handle graphics with real-time updates, and file parsing to handle user input</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Projects: CS 101 -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <!-- <p>CS 101 - Projects in Machine Learning</p> -->
+              <p>09/16 - 12/16</p>
+              <img class="resume-img" src="images/funnehbot.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Computational Humor</h3>
+              <ul>
+                <li>Programmed a bot to make humorous comments on reddit posts</li>
+                <li>Used word2vec, image recognition, PCA and NLTK to generate humour</li>
+                <li>Used sklearn to generate a model that determines relevancy of a comment</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Projects: CS 159 -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <p>03/16 - 06/16</p>
+              <img class="resume-img" src="images/breakout.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Deep Reinforcement Learning | CS 159 - Advanced Topics in Machine Learning</h3>
+              <ul>
+                <li>Extended Google DeepMind’s deep Q-network by implementing Q-learning extensions using Torch and Lua</li>
+                <li>Tested on Atari Breakout framework with a 35% reward increase</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Projects: CS 155 Sentiment Analysis -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <p>01/16 - 03/16</p>
+              <img class="resume-img" src="images/caltech.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Sentiment Analysis | CS 155 - Machine Learning</h3>
+              <ul>
+                <li>Predicted sentiment given a bag-of-words represented data set</li>
+                <li>Implemented SVMs, random forests, bagging, and a grid search to find optimal parameters in Python using scikit-learn and NumPy</li>
+                <li>Placed 8th out of 80 teams on Kaggle with a score of 66% accuracy</li>
+              </ul>
+            </div>
+          </div>
+
+          
+
+          
+          <!-- Projects: CS 155 Sonnet Generator -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <p>01/16 - 03/16</p>
+              <img class="resume-img" src="images/caltech.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Sonnet Generator | CS 155 - Machine Learning</h3>
+              <ul>
+                <li>Preprocessed Shakespeare sonnets and implemented a Hidden Markov Model to generate sonnets with rhyme and scheme in Python using scikit-learn, NumPy, and NLTK</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Projects: Cal Hacks -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Cal Hacks</h3>
+              <p>10/15</p>
+              <img class="resume-img" src="images/calhacks.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Venturso.me: Python | Flask | HTML/CSS | JavaScript</h3>
+              <ul>
+                <li>Plans an itinerary of activities and events between two locations using a rating-based scoring system</li>
+                <li>Designed an algorithm that chose the shortest and highest scoring path based on HERE API data</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Projects: SD Hacks -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>SD Hacks</h3>
+              <p>10/15</p>
+              <img class="resume-img" src="images/sdhacks.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Globalyze | Top 5 Hacks</h3>
+              <ul>
+                <li>Displayed city data on a virtual reality globe using Oculus Rift and Leap Motion in Unity (see <a href="devpost.com/software/globalyze">Devpost submission</a>)</li>
+                <li>Used Python for web scraping and JavaScript for APIs</li>
+              </ul>
+            </div>
+          </div>
+
+
+
+        <!-- Initiatives -->
+        <div class="resume-section" id="initiatives">
+
+          <!-- Initiatives header -->
+          <div class="row resume-header">
+            <div class="col-sm-4 col-sm-offset-2">
+              <h2>Initiatives</h2>
+            </div>
+          </div>
+
+          <!-- Initiatives: Hacktech -->
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Caltech</h3>
+              <p>08/15 - 03/17</p>
+              <img class="resume-img" src="images/hacktech2.png">
+            </div>
+
+            <div class="col-sm-6">
+              <h3>Hacktech Co-Head Director</h3>
+              <ul>
+                <li>Organized two annual 36-hour hackathons held at Caltech that brought together 500 students around the globe (see <a href="https://hacktech.io">our site</a>)</li>
+                <li>Raised over $90,000, organized workshops and talks, and prepared logistics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Initiatives -->
+
+        <!-- Coursework -->
+        <div class="resume-section" id="coursework">
+
+          <!-- Coursework header -->
+          <div class="row resume-header">
+            <div class="col-sm-4 col-sm-offset-2">
+              <h2>Coursework</h2>
+            </div>
+          </div>
+
+          <!-- Coursework: list -->
+          <div class="row resume-item">
+            <div class="col-sm-8 col-sm-offset-2">
+              <h2>In Progress</h2>
+              <h3>Learning Systems Projects</h3>
+
+              <h2>Completed</h2>
+              <h3>Learning Systems</h3>
+              <h3>Machine Learning &amp; Data Mining</h3>
+              <h3>Projects in Machine Learning</h3>
+              <h3>Advanced Machine Learning</h3>
+              <h3>Advanced Robotics</h3>
+              <h3>Communication Networks</h3>
+              <h3>Relational Databases</h3>
+              <h3>Computing Systems</h3>
+              <h3>Algorithms</h3>
+            </div>
+          </div>
+        </div>
+        <!-- End Coursework -->
+
+
+
+
+
+        <!-- Awards -->
+        <div class="resume-section" id="awards">
+
+          <!-- Awards header -->
+          <div class="row resume-header">
+            <div class="col-sm-4 col-sm-offset-2">
+              <h2>Awards</h2>
+            </div>
+          </div>
+
+          <!-- Awards: list -->
+          <div class="row resume-item">
+            <div class="col-sm-8 col-sm-offset-2">
+              <h3>Bloomberg CodeCon 4th place</h3>
+              <h3>CS 1 Honor Roll Grand Champion</h3>
+              <h3>USA Math Olympiad Qualifier</h3>
+              <h3>Canadian Math Olympiad Qualifier</h3>
+              <h3>USA Junior Math Olympiad</h3>
+              <!-- TODO: Add governor general award -->
+            </div>
+          </div>
+        </div>
+        <!-- End Awards -->
+
+
+
+        <!-- Skills -->
+        <div class="resume-section" id="skills">
+
+          <!-- Skills header -->
+          <div class="row resume-header">
+            <div class="col-sm-4 col-sm-offset-2">
+              <h2>Skills</h2>
+            </div>
+          </div>
+
+          <!-- Skills: list -->
+          <!-- TODO: fix -->
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-2">
+              <h2>Languages</h2>
+            </div>
+            <div class="col-sm-4">
+              <h2>Tools</h2>
+            </div>
+          </div>
+
+          <div class="row resume-item">
+            <div class="col-sm-2 col-sm-offset-2">
+              <h3>Python</h3>
+              <h3>C</h3>
+              <h3>C++</h3>
+              <h3>MySQL</h3>
+              <h3>OCaml</h3>
+              <h3>Mathematica</h3>
+              <h3>Java</h3>
+            </div>
+            <div class="col-sm-2">
+              <!-- TODO: FIX -->
+              <h3>&#9733; &#9733; &#9733;</h3>
+              <h3>&#9733; &#9733; &#9733;</h3>
+              <h3>&#9733; &#9733; &#9734;</h3>
+              <h3>&#9733; &#9733; &#9734;</h3>
+              <h3>&#9733; &#9733; &#9734;</h3>
+              <h3>&#9733; &#9733; &#9734;</h3>
+              <h3>&#9733; &#9734; &#9734;</h3>
+            </div>
+            <div class="col-sm-2">
+              <h3>Git</h3>
+              <h3>sklearn</h3>
+              <h3>SciPy</h3>
+              <h3>Unix</h3>
+              <h3>NLTK</h3>
+              <h3>Docker</h3>
+            </div>
+            <div class="col-sm-2">
+              <h3>&#9733; &#9733; &#9733;</h3>
+              <h3>&#9733; &#9733; &#9733;</h3>
+              <h3>&#9733; &#9733; &#9733;</h3>
+              <h3>&#9733; &#9733; &#9734;</h3>
+              <h3>&#9733; &#9734; &#9734;</h3>
+              <h3>&#9733; &#9734; &#9734;</h3>
+            </div>
+          </div>
+        </div>
+        <!-- End Skills -->
+
       </div>
     </div>
 
-
-
-       
   </body>
   </html> 
 
