@@ -15,7 +15,7 @@
     <div class="dropdown-content">
       {% for item in site.data.settings.menu %}
         {% if item.external_url %}
-          <a href="{{ item.external_url }}" class="menu-link">{{ item.name }}</a>
+          <a href="{{ item.external_url }}" class="menu-link" target="_blank">{{ item.name }}</a>
         {% else %}
           <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
         {% endif %}
