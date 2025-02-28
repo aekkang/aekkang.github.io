@@ -6,12 +6,9 @@ disqus:
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-ID: 'UA-112060364-2'
 
-# menu:
-# - {name: 'About',  url: 'about'}
-
-menu_external:
-- {name: 'Resume',  url: 'https://drive.google.com/file/d/1Vu8uk4hEHKloDimSQEw8YcLur_RKGOui/view?usp=sharing'}
-- {name: 'Music',  url: 'https://www.youtube.com/c/andoruk'}
+menu:
+- {name: 'Resume',  external_url: 'https://drive.google.com/file/d/1Vu8uk4hEHKloDimSQEw8YcLur_RKGOui/view?usp=sharing'}
+- {name: 'Music',  external_url: 'https://www.youtube.com/c/andoruk'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
