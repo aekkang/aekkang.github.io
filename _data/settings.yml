@@ -6,7 +6,10 @@ disqus:
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-ID: 'UA-112060364-2'
 
-menu:
+# menu:
+# - {name: 'About',  url: 'about'}
+
+menu_external:
 - {name: 'Resume',  url: 'https://drive.google.com/file/d/1Vu8uk4hEHKloDimSQEw8YcLur_RKGOui/view?usp=sharing'}
 - {name: 'Music',  url: 'https://www.youtube.com/c/andoruk'}
 
