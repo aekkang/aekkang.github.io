@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<center><img src="assets/img/profile.jpg" width="1000"></center>
+<center><img src="assets/img/profile.jpg" width="100%"></center>
 
 <br />
 
